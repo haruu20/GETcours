@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETcours</title>
+    <link rel="stylesheet" href="momyzat.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    <a href="#" class="logo"><!--<img src="img/logo.png" alt="logo">-->GETcours</a>
+
+    <ul class="navlist">
+        <li><a href="#">home</a></li>
+        <li><a href="#momyzat">skills</a></li>
+        <li><a href="#project">project</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#con">contacts</a></li>
+    </ul>
+    <div class="nav-right">
+        <!--<a href="#" class="btn">Book now</a>-->
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+    </div>
+</header>
+
+    
+</div>
+<section>
+    <div class="home_pic">
+        <h1>تعليم متكامل مع فرص ربح مميزة
+        </h1><p> هي شركة تعليمية رائدة في الجزائر، تقدم دورات متنوعة تلبي احتياجات جميع الفئات العمرية والتعليمية. بفضل برامجها الشاملة ونظام الربح الثنائي العادل، توفر فرصًا مميزة لتطوير المهارات وتحقيق النجاح المالي</p></div>
+    <!--
+    <p>
+        hi
+
+    </p>
+    <h1> wiiiii</h1>
+    -->
+    
+<footer>
+    <h1 class="anwan">مميزات الشركة</h1>
+    <p class="parg">شركة الجزائرية تتميز بتقديم دورات تعليمية متنوعة تشمل المجالات الأكاديمية والحرفية، مع نظام ربحي ثنائي يضمن الشفافية والعدالة وتوفر لك مجموعة من المميزات التي تجعل العمل معنا تجربة فريدة ومجزية</p>
+    <br>
+    <p class="parg">: وتتمثل هذه المميزات في </p>
+    <img src="pexels-yogendras31-7883987.jpg" alt="" class="img1">
+   <!-- <h1>مقدمة</h1>-->
+    <!--
+    <div class="cart m9dma">
+        <br><br>
+        <p>شركة New Vision تعد منارة التميز في مجال التعليم في الجزائر، حيث تقدم فرصة فريدة لتطوير الذات وتحقيق النجاح المالي. تجمع New Vision بين التعليم والفرص الاقتصادية من خلال مجموعة واسعة من الدورات الأكاديمية والحرفية. مع دعم فريق متخصص ذي خبرة واسعة، ستتمكن من تحويل طموحاتك إلى واقع ملموس. انضم إلينا اليوم وابدأ رحلة النجاح والتميز، ولا تفوت الفرصة لتحقيق أهدافك التعليمية والمالية.</p>
+        
+    </div>
+    -->
+        
+
+</footer>
+<div>
+   
+        <div class="contact">
+        <p>Gmail: quranic_school@gmail.com</p>
+        <br><br>
+        <p>telephone: +213554006901</p>
+        <br><br>
+        <pre>Instagram:        Fancebook:          linkdin:</pre>
+        </div>
+        
+   
+</div>
+
+</section>
+
+    
+</body>
+<script type="text/javascript">
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.navlist');
+    let navLinks = document.querySelectorAll('.navlist a');
+
+    menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navlist.classList.toggle('open');
+    }
+
+    navLinks.forEach(link => {
+        link.onclick = () => {
+            if (navlist.classList.contains('open')) {
+                menu.classList.remove('bx-x');
+                navlist.classList.remove('open');
+            }
+        }
+    });
+
+
+
+    window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const logo = document.querySelector('.logo');
+    if (window.scrollY > 600) {
+        header.classList.add('header-blue');
+        logo.classList.add('logo-blue');
+    } else {
+        header.classList.remove('header-blue');
+        logo.classList.remove('logo-blue');
+    }
+});
+
+</script>
+</html>
